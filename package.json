@@ -1,15 +1,19 @@
 {
-  "name": "metro-config",
+  "name": "metro-config-canhtvee",
   "version": "0.54.1",
   "description": "🚇 Config parser for Metro",
   "main": "src/index.js",
+  "files": [
+    "src"
+  ],
   "repository": {
     "type": "git",
     "url": "git@github.com:canhtvee/metro-config.git"
   },
   "scripts": {
     "prepare-release": "test -d build && rm -rf src.real && mv src src.real && mv build src",
-    "cleanup-release": "test ! -e build && mv src build && mv src.real src"
+    "cleanup-release": "test ! -e build && mv src build && mv src.real src",
+    "publish": "npm publish --access public"
   },
   "license": "MIT",
   "dependencies": {
